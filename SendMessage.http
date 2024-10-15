@@ -1,0 +1,30 @@
+### Send Message to Kafka
+GET http://localhost:8888/usefulmessage
+
+### Send  Message to the server
+POST http://localhost:8888/send?topic=test&key="KafkaMessages&message=POST_MESSAGE_USING_URL
+Content-Type: application/json
+
+{
+  "topic": "test",
+  "key": "kafka-Large-Message",
+  "message" : "Hello Kafka from Tomcat"
+}
+
+
+### Send  Message to the server
+POST http://localhost:8888/send?topic=test&key="KafkaMessages&message=POST_MESSAGE_USING_URL
+Content-Type: application/json
+
+### Send Message
+POST http://localhost:8888/sendlargemessage?topic=test&key=kafka-Spring-Message&sizeInMB=100
+
+### Send  Message to the server
+POST http://localhost:8889/send?topic=test&key=kafka-Spring-Message&message=Hello%20Kafka
+
+### Send Message to Kafka
+GET http://localhost:8889/usefulmessage
+
+
+
+
